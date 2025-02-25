@@ -98,17 +98,17 @@ export default function InfoSection() {
                     {/* Card 6 */}
                     <div className="flex flex-col items-center">
                         <img
-                            src="/challenges.jpg"
-                            alt="Challenges"
+                            src="/journal.jpg"
+                            alt="Journal"
                             className="w-full h-64 object-cover"
                         />
                         <Link href="/pages/challenges">
                             <h2 className="mt-4 text-red-300 text-xl font-semibold">
-                                Challenges
+                                Journal
                             </h2>
                         </Link>
                         <p className="mt-2 text-center text-sm text-gray-300">
-                            “Legend Of The East.”
+                            “We Can’t Change What's Done, We Can Only Move On.”
                         </p>
                     </div>
                 </div>
