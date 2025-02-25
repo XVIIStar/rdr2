@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useState, useEffect, useRef } from 'react';
+import {useState, useEffect, useRef} from 'react';
 import Link from "next/link";
 
 export default function Navbar() {
@@ -35,7 +35,8 @@ export default function Navbar() {
                             <span className="absolute -inset-0.5"></span>
                             <span className="sr-only">Open main menu</span>
 
-                            <svg className="block size-6" fill="strokeLinejoinnone" viewBox="0 0 24 24" strokeWidth="1.5"
+                            <svg className="block size-6" fill="strokeLinejoinnone" viewBox="0 0 24 24"
+                                 strokeWidth="1.5"
                                  stroke="currentColor" aria-hidden="true" data-slot="icon">
                                 <path strokeLinecap="round" strokeLinejoin="round"
                                       d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
@@ -57,20 +58,21 @@ export default function Navbar() {
                         </div>
                         <div className="hidden sm:ml-6 sm:block">
                             <div className="flex space-x-4">
-                                <Link href="/pages/overview" className="rounded-md bg-red-900 px-3 py-2 text-sm font-medium text-white"
-                                   aria-current="page">
+                                <Link href="/pages/overview"
+                                      className="rounded-md px-3 py-2 text-sm font-medium text-red-300 hover:bg-red-700 hover:text-white"
+                                      aria-current="page">
                                     Overview
                                 </Link>
                                 <Link href="/pages/characters"
-                                   className="rounded-md px-3 py-2 text-sm font-medium text-red-300 hover:bg-red-700 hover:text-white">
+                                      className="rounded-md px-3 py-2 text-sm font-medium text-red-300 hover:bg-red-700 hover:text-white">
                                     Characters
                                 </Link>
                                 <Link href="/pages/mission"
-                                   className="rounded-md px-3 py-2 text-sm font-medium text-red-300 hover:bg-red-700 hover:text-white">
+                                      className="rounded-md px-3 py-2 text-sm font-medium text-red-300 hover:bg-red-700 hover:text-white">
                                     Missions
                                 </Link>
                                 <Link href="/pages/maps"
-                                   className="rounded-md px-3 py-2 text-sm font-medium text-red-300 hover:bg-red-700 hover:text-white">
+                                      className="rounded-md px-3 py-2 text-sm font-medium text-red-300 hover:bg-red-700 hover:text-white">
                                     Maps
                                 </Link>
                             </div>
@@ -107,17 +109,17 @@ export default function Navbar() {
                             </div>
 
                             {isUserMenuOpen && (
-                            <div
-                                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5 focus:outline-hidden"
-                                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
-                                tabIndex={-1}>
-                                <a href="#" className="block px-4 py-2 text-sm text-red-700" role="menuitem"
-                                   tabIndex={-1} id="user-menu-item-0">Your Profile</a>
-                                <a href="#" className="block px-4 py-2 text-sm text-red-700" role="menuitem"
-                                   tabIndex={-1} id="user-menu-item-1">Settings</a>
-                                <a href="#" className="block px-4 py-2 text-sm text-red-700" role="menuitem"
-                                   tabIndex={-1} id="user-menu-item-2">Sign out</a>
-                            </div>
+                                <div
+                                    className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5 focus:outline-hidden"
+                                    role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
+                                    tabIndex={-1}>
+                                    <a href="#" className="block px-4 py-2 text-sm text-red-700" role="menuitem"
+                                       tabIndex={-1} id="user-menu-item-0">Your Profile</a>
+                                    <a href="#" className="block px-4 py-2 text-sm text-red-700" role="menuitem"
+                                       tabIndex={-1} id="user-menu-item-1">Settings</a>
+                                    <a href="#" className="block px-4 py-2 text-sm text-red-700" role="menuitem"
+                                       tabIndex={-1} id="user-menu-item-2">Sign out</a>
+                                </div>
                             )}
                         </div>
                     </div>
